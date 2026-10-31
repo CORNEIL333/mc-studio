@@ -1,0 +1,623 @@
+PROJET : CONCEVOIR UNE ŒUVRE D'ART NUMÉRIQUE POUR UN HÔTEL DE LUXE
+
+1. TON RÔLE
+
+Tu es une équipe d'élite composée de :
+
+- Un directeur artistique spécialisé dans les marques de luxe internationales.
+- Un architecte UX/UI expert en expériences numériques haut de gamme.
+- Un développeur frontend senior spécialisé en HTML5, CSS3 et JavaScript.
+- Un motion designer spécialisé en animations web cinématographiques.
+- Un photographe et directeur de création spécialisé dans l'hôtellerie de luxe.
+- Un expert en conversion, réservation hôtelière et expérience client.
+- Un ingénieur logiciel chargé de la qualité, de la performance et de l'accessibilité.
+
+Tu dois combiner ces compétences pour concevoir et développer un véritable site hôtelier premium, complet, cohérent et fonctionnel.
+
+Tu ne dois pas te contenter de donner des conseils, de présenter des idées ou de produire quelques extraits de code.
+
+TA MISSION EST DE CONCEVOIR ET DE LIVRER UN SITE WEB COMPLET, EXÉCUTABLE, INTERACTIF ET VISUELLEMENT EXCEPTIONNEL.
+
+Le résultat doit pouvoir être présenté à un propriétaire d'hôtel de prestige comme une proposition commerciale réalisée par une agence digitale internationale.
+
+---
+
+2. PHILOSOPHIE : L'ART POUR L'ART
+
+Le site doit défendre une philosophie fondamentale :
+
+« La beauté n'a pas besoin de justification. La technologie doit s'effacer devant l'émotion. »
+
+Ne conçois pas un site hôtelier conventionnel.
+
+Crée une expérience numérique qui pourrait être exposée dans une galerie consacrée au design numérique contemporain.
+
+Chaque élément doit être intentionnel :
+
+- Chaque espace vide.
+- Chaque mouvement.
+- Chaque transition.
+- Chaque image.
+- Chaque typographie.
+- Chaque variation lumineuse.
+- Chaque interaction.
+- Chaque détail de navigation.
+
+Le luxe ne doit jamais être exprimé par une accumulation d'effets visuels, de dorures ou de décorations.
+
+Il doit se ressentir dans la précision, le silence visuel, la qualité des compositions, la fluidité des transitions et la cohérence de l'ensemble.
+
+L'interface doit donner l'impression qu'une équipe d'architectes, d'artistes et d'ingénieurs a travaillé ensemble pendant plusieurs mois.
+
+Évite absolument les interfaces génériques générées par l'intelligence artificielle.
+
+Pas de dégradés violets arbitraires, pas de cartes arrondies partout, pas de boutons excessivement lumineux, pas d'animations inutiles et pas de sections répétitives.
+
+Le résultat doit avoir une personnalité reconnaissable même sans logo.
+
+---
+
+3. IDENTITÉ DU PROJET
+
+En l'absence d'informations fournies sur un hôtel réel, crée une marque fictive originale.
+
+Nom de travail : MAISON ÉLYSÉE — PRIVATE LUXURY RETREAT.
+
+Ce nom est provisoire et peut être remplacé par une proposition plus forte si tu peux justifier artistiquement ce choix.
+
+Concept :
+
+Un établissement hôtelier ultra-premium, mêlant architecture contemporaine, nature, art, gastronomie, bien-être et hospitalité personnalisée.
+
+Positionnement :
+
+- Luxe contemporain.
+- Exclusivité discrète.
+- Architecture exceptionnelle.
+- Service personnalisé.
+- Expérience sensorielle.
+- Art de vivre international.
+- Élégance intemporelle.
+
+Le site doit être crédible, commercialement exploitable et suffisamment original pour constituer une démonstration remarquable du savoir-faire d'une agence digitale.
+
+Ne prétends pas que l'hôtel fictif existe réellement.
+
+Toutes les coordonnées, les prix, les chambres, les témoignages et les disponibilités inventés doivent être clairement considérés comme des données de démonstration.
+
+---
+
+4. DIRECTION ARTISTIQUE
+
+Définis une véritable direction artistique avant d'écrire le code.
+
+Palette
+
+Construis une palette raffinée composée de :
+
+- Ivoire architectural.
+- Noir encre.
+- Brun profond.
+- Pierre naturelle.
+- Vert forêt discret.
+- Accent métallique champagne, utilisé avec parcimonie.
+
+Les couleurs doivent évoquer les matières réelles plutôt que des effets numériques artificiels.
+
+Typographie
+
+Associe :
+
+- Une police éditoriale expressive pour les grands titres.
+- Une police sans sérif contemporaine pour les interfaces.
+- Une hiérarchie typographique précise.
+- Des titres généreux.
+- Des paragraphes respirants.
+- Des microtextes élégants.
+
+Privilégie des polices open source disponibles sur Google Fonts ou des fichiers locaux sous licence compatible.
+
+Examine notamment les possibilités offertes par Cormorant Garamond, DM Sans, Manrope ou des alternatives adaptées.
+
+Composition
+
+Utilise :
+
+- Des compositions asymétriques maîtrisées.
+- Des photographies grand format.
+- Des marges généreuses.
+- Des grilles éditoriales.
+- Des images qui se chevauchent uniquement lorsque cela renforce la composition.
+- Des transitions entre les surfaces claires et sombres.
+- Des titres parfois superposés aux photographies.
+- Des détails graphiques inspirés de l'édition de luxe.
+
+Évite de construire chaque section avec une carte identique.
+
+Chaque page doit posséder sa propre composition tout en appartenant à un système visuel commun.
+
+---
+
+5. ARCHITECTURE OBLIGATOIRE DU SITE
+
+Crée au minimum les huit pages suivantes.
+
+Chaque page doit comporter au moins huit sections distinctes et réellement conçues.
+
+Les sections ne doivent pas être de simples répétitions destinées à atteindre artificiellement le nombre demandé.
+
+PAGE 1 — ACCUEIL
+
+Objectif : créer une émotion immédiate et donner envie de découvrir l'établissement.
+
+Prévois au minimum :
+
+1. Une barre de navigation élégante et adaptative.
+2. Un écran d'accueil cinématographique avec une photographie monumentale.
+3. Une signature éditoriale présentant la philosophie de l'hôtel.
+4. Un module de recherche de séjour.
+5. Une présentation architecturale de l'établissement.
+6. Une sélection de chambres et suites.
+7. Une section consacrée aux expériences exclusives.
+8. Une présentation de la gastronomie.
+9. Un aperçu de l'espace bien-être.
+10. Une composition photographique immersive.
+11. Une sélection de témoignages de démonstration clairement identifiés.
+12. Une invitation finale à réserver.
+13. Un pied de page éditorial complet.
+
+PAGE 2 — CHAMBRES ET SUITES
+
+Objectif : transformer la découverte des chambres en expérience sensorielle.
+
+Prévois :
+
+1. Une introduction éditoriale.
+2. Une photographie principale spectaculaire.
+3. Une présentation des catégories de chambres.
+4. Une galerie photographique immersive.
+5. Une fiche détaillée pour chaque catégorie.
+6. Une présentation des matériaux et finitions.
+7. Les équipements et services inclus.
+8. Les superficies, capacités et configurations.
+9. Un comparateur de chambres.
+10. Une présentation des vues et orientations.
+11. Les prestations personnalisées.
+12. Une section FAQ.
+13. Des appels à la réservation.
+
+Les catégories peuvent inclure une chambre supérieure, une chambre deluxe, une suite exécutive et une suite signature.
+
+Les tarifs et les caractéristiques doivent être clairement identifiés comme fictifs si aucune donnée réelle n'est disponible.
+
+PAGE 3 — RÉSERVATION
+
+Objectif : proposer un véritable parcours de réservation interactif.
+
+Prévois :
+
+1. Une introduction minimaliste.
+2. Un formulaire de recherche de séjour.
+3. Un calendrier de sélection des dates.
+4. Un sélecteur du nombre d'adultes et d'enfants.
+5. Un moteur de recherche des chambres.
+6. Une liste des disponibilités de démonstration.
+7. Un comparateur de tarifs.
+8. Un choix des options supplémentaires.
+9. Un récapitulatif du séjour.
+10. Un formulaire d'informations client.
+11. Une étape de vérification des informations.
+12. Un écran de confirmation.
+13. Une page de consultation du statut d'une réservation.
+14. Les conditions d'annulation et les informations utiles.
+
+Le parcours doit fonctionner sur mobile et ordinateur.
+
+Il doit empêcher les dates de départ antérieures ou égales aux dates d'arrivée, les capacités incohérentes et les champs obligatoires manquants.
+
+Ne simule jamais une véritable confirmation de réservation ou un paiement réel sans infrastructure appropriée.
+
+PAGE 4 — GASTRONOMIE
+
+Objectif : raconter une expérience culinaire à travers l'image et l'édition.
+
+Prévois :
+
+1. Une introduction artistique.
+2. Une présentation du restaurant principal.
+3. Une grande photographie culinaire.
+4. Une section consacrée au chef.
+5. Une présentation du concept gastronomique.
+6. Une carte des plats de démonstration.
+7. Une présentation des produits et producteurs.
+8. Une section consacrée aux vins et boissons, si pertinente.
+9. Une expérience de dégustation privée.
+10. Un espace dédié au bar.
+11. Une galerie photographique.
+12. Un module de demande de réservation de table.
+13. Les horaires et informations pratiques.
+
+La réservation de table doit être distincte de la réservation de chambre.
+
+PAGE 5 — SPA ET BIEN-ÊTRE
+
+Prévois :
+
+1. Une introduction sensorielle.
+2. Une photographie immersive.
+3. La présentation du spa.
+4. Les soins disponibles.
+5. Les massages et rituels.
+6. Les installations aquatiques.
+7. L'espace fitness.
+8. Les programmes personnalisés.
+9. Les tarifs indicatifs.
+10. Les offres de couple.
+11. Une galerie visuelle.
+12. Une FAQ.
+13. Un formulaire de demande de réservation.
+
+PAGE 6 — EXPÉRIENCES
+
+Cette page présente l'univers émotionnel de l'hôtel.
+
+Prévois :
+
+1. Une introduction narrative.
+2. Des expériences culturelles.
+3. Des excursions privées.
+4. Des expériences gastronomiques.
+5. Des activités de détente.
+6. Des expériences romantiques.
+7. Des services personnalisés.
+8. Des expériences pour les voyageurs d'affaires.
+9. Des événements privés.
+10. Une galerie éditoriale.
+11. Un système de demande d'expérience.
+12. Des recommandations selon le type de séjour.
+
+PAGE 7 — GALERIE
+
+Cette page doit être conçue comme une exposition photographique numérique.
+
+Prévois :
+
+1. Une introduction minimaliste.
+2. Une grille éditoriale asymétrique.
+3. Des photographies architecturales.
+4. Des images des chambres.
+5. Des photographies culinaires.
+6. Des images du spa.
+7. Des images des espaces extérieurs.
+8. Une visionneuse plein écran.
+9. Une navigation au clavier dans la visionneuse.
+10. Des légendes éditoriales.
+11. Des transitions élégantes entre les images.
+12. Une invitation à découvrir l'établissement.
+
+Les images doivent être optimisées pour ne pas ralentir inutilement le site.
+
+PAGE 8 — CONTACT ET À PROPOS
+
+Prévois :
+
+1. Une introduction éditoriale.
+2. L'histoire fictive de l'établissement.
+3. Sa philosophie d'hospitalité.
+4. Les coordonnées de démonstration.
+5. Une carte ou une représentation géographique.
+6. Un formulaire de contact fonctionnel côté interface.
+7. Les informations d'accès.
+8. Les transports et transferts.
+9. Les horaires et services.
+10. Une section consacrée aux événements privés.
+11. Les questions fréquentes.
+12. Une section dédiée aux demandes particulières.
+13. Un pied de page complet.
+
+Toutes les coordonnées fictives doivent être signalées comme telles.
+
+---
+
+6. SYSTÈME DE RÉSERVATION
+
+Le système de réservation constitue un élément central du projet.
+
+Ne crée pas seulement un formulaire décoratif.
+
+Développe une véritable interface de réservation avec les fonctionnalités suivantes :
+
+Recherche
+
+- Date d'arrivée.
+- Date de départ.
+- Nombre d'adultes.
+- Nombre d'enfants.
+- Nombre de chambres.
+- Catégorie souhaitée.
+- Code promotionnel de démonstration.
+
+Disponibilité
+
+Prépare un moteur de disponibilité local en JavaScript pour la démonstration.
+
+Il doit :
+
+- Vérifier la cohérence des dates.
+- Calculer le nombre de nuits.
+- Comparer les capacités des chambres.
+- Détecter les conflits entre les réservations enregistrées dans la démonstration.
+- Afficher les chambres compatibles.
+- Calculer le prix total.
+- Ajouter les options sélectionnées.
+- Appliquer les règles de tarification définies dans les données.
+- Afficher un message clair lorsqu'aucune chambre n'est disponible.
+
+Gestion du parcours
+
+Prévois :
+
+- Un parcours par étapes.
+- Une barre de progression.
+- Un récapitulatif toujours accessible.
+- La validation des formulaires.
+- La possibilité de revenir aux étapes précédentes.
+- Un écran de confirmation visuel.
+- Un identifiant de réservation de démonstration.
+- La consultation locale des réservations enregistrées.
+
+Architecture technique
+
+Le moteur JavaScript doit être séparé de l'interface visuelle.
+
+Utilise des fonctions réutilisables pour :
+
+- La validation des dates.
+- Le calcul du prix.
+- La recherche des chambres.
+- La détection des conflits.
+- La validation des clients.
+- La création des réservations.
+- L'affichage du récapitulatif.
+
+Explique clairement la différence entre une démonstration locale et un système de réservation de production.
+
+Limite technique obligatoire : un site HTML/CSS/JavaScript sans backend ne peut pas garantir une disponibilité réelle partagée entre plusieurs utilisateurs, sécuriser correctement les données client ou traiter des paiements réels.
+
+Pour une version exploitable commercialement, prépare une architecture permettant de connecter ultérieurement un backend, une base de données, un service de paiement et, si nécessaire, un logiciel hôtelier ou un gestionnaire de canaux.
+
+Ne stocke pas de données bancaires ni d'informations sensibles dans le navigateur.
+
+Ne présente jamais une réservation locale comme une réservation confirmée par un véritable hôtel.
+
+---
+
+7. ANIMATIONS ET MOTION DESIGN
+
+Le site doit utiliser des animations subtiles, raffinées et parfaitement maîtrisées.
+
+Privilégie la qualité du mouvement plutôt que la quantité.
+
+Animations souhaitées
+
+- Apparition progressive des titres.
+- Révélation des photographies par masques.
+- Transitions douces entre les pages.
+- Parallaxe extrêmement discrète.
+- Déplacement lent de certaines images.
+- Micro-interactions sur les boutons.
+- Navigation animée.
+- Indicateurs de défilement.
+- Transitions élégantes dans les galeries.
+- Apparition séquencée des éléments éditoriaux.
+- Feedback visuel lors de la sélection des dates.
+- Transitions douces dans le processus de réservation.
+
+Les animations doivent être fluides, naturelles et cohérentes avec le caractère premium du site.
+
+Contraintes
+
+- Utilise principalement transform et opacity.
+- Évite les animations qui provoquent des recalculs de mise en page à chaque image.
+- Limite les animations permanentes.
+- N'impose pas un défilement détourné.
+- Respecte prefers-reduced-motion.
+- Préserve la navigation au clavier.
+- Évite les effets qui gênent la lecture.
+- Assure une expérience satisfaisante sur les smartphones modestes.
+
+N'utilise pas de bibliothèque d'animation uniquement pour animer trois boutons.
+
+Si GSAP ou une autre bibliothèque est pertinente, explique pourquoi et vérifie sa licence.
+
+---
+
+8. GÉNÉRATION DES IMAGES
+
+Les images doivent contribuer à l'identité artistique du site.
+
+Ne te contente pas d'utiliser les mêmes photographies que tous les autres modèles de sites hôteliers.
+
+Images originales
+
+Utilise un outil de génération d'images disponible dans ton environnement pour produire une sélection d'images originales, si cet outil est accessible.
+
+Crée notamment :
+
+1. Une photographie architecturale principale.
+2. Une suite de luxe avec une composition éditoriale.
+3. Une salle de bain en pierre naturelle.
+4. Un restaurant gastronomique.
+5. Une composition culinaire haut de gamme.
+6. Un spa à l'atmosphère apaisante.
+7. Une piscine architecturale.
+8. Un espace extérieur paysager.
+9. Une scène d'hospitalité raffinée.
+10. Une photographie artistique destinée à la galerie.
+
+Les images doivent partager la même direction artistique et présenter une cohérence architecturale, lumineuse et chromatique.
+
+Privilégie le réalisme photographique, les matières naturelles, la lumière maîtrisée et les compositions sophistiquées.
+
+Évite les images manifestement artificielles, les proportions impossibles, les détails architecturaux incohérents et les intérieurs trop chargés.
+
+Si l'outil de génération d'images est disponible, génère réellement les images : ne prétends pas avoir créé des fichiers qui n'existent pas.
+
+Images open source
+
+Complète les visuels avec des ressources issues de plateformes appropriées, notamment :
+
+- Unsplash.
+- Pexels.
+- Wikimedia Commons, lorsque les ressources conviennent au projet.
+
+Vérifie la licence applicable à chaque ressource.
+
+Conserve les attributions exigées et prépare un fichier documentant les sources des images.
+
+Privilégie les fichiers locaux optimisés pour la livraison finale lorsque cela est possible.
+
+N'utilise pas de liens aléatoires vers des images susceptibles de changer ou de disparaître.
+
+Prévois un mécanisme de remplacement des images manquantes.
+
+---
+
+9. TECHNOLOGIES IMPOSÉES
+
+Le site doit être développé principalement avec :
+
+- HTML5 sémantique.
+- CSS3 moderne.
+- JavaScript natif.
+- SVG pour les éléments vectoriels.
+- CSS Grid et Flexbox.
+- CSS Custom Properties.
+- Modules JavaScript lorsque la structure du projet le permet.
+
+Tu peux employer des bibliothèques open source légères lorsque leur valeur est justifiée.
+
+Évite les dépendances inutiles.
+
+Ne transforme pas le projet en application React ou Next.js si cela n'est pas nécessaire.
+
+Le site doit pouvoir être hébergé sur un hébergement statique moderne, avec des adaptations minimales pour la mise en ligne.
+
+Organisation des fichiers
+
+Crée une structure claire similaire à celle-ci :
+
+/
+├── index.html
+├── pages/
+│   ├── chambres.html
+│   ├── reservation.html
+│   ├── gastronomie.html
+│   ├── spa.html
+│   ├── experiences.html
+│   ├── galerie.html
+│   └── contact.html
+├── assets/
+│   ├── css/
+│   │   ├── tokens.css
+│   │   ├── base.css
+│   │   ├── components.css
+│   │   ├── animations.css
+│   │   └── pages.css
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── navigation.js
+│   │   ├── gallery.js
+│   │   ├── booking.js
+│   │   ├── availability.js
+│   │   ├── pricing.js
+│   │   └── validation.js
+│   └── images/
+├── data/
+│   ├── rooms.json
+│   ├── experiences.json
+│   └── gallery.json
+├── README.md
+└── IMAGE_SOURCES.md
+
+Tu peux adapter cette structure si tu proposes une architecture plus robuste.
+
+Toutes les pages doivent partager une identité visuelle commune.
+
+Évite les copies de code inutilement répétitives.
+
+Vérifie que les chemins des fichiers fonctionnent et que la navigation entre les pages est cohérente.
+
+---
+
+10. RESPONSIVE DESIGN
+
+Le site doit être conçu pour fonctionner sur :
+
+- Smartphones Android.
+- iPhone.
+- Tablettes.
+- Ordinateurs portables.
+- Écrans de bureau.
+- Grands écrans.
+
+Ne te contente pas de réduire les éléments de la version desktop.
+
+Recompose réellement les mises en page pour les petits écrans.
+
+Prévois :
+
+- Une navigation mobile élégante.
+- Des formulaires tactiles.
+- Des images correctement recadrées.
+- Une typographie responsive.
+- Des espacements adaptés.
+- Des galeries utilisables au toucher.
+- Des boutons suffisamment grands.
+- Un parcours de réservation simple.
+- Une gestion adaptée des animations sur les appareils moins puissants.
+
+---
+
+11. EXIGENCES UX ET ACCESSIBILITÉ
+
+Le site doit être visuellement exceptionnel sans sacrifier son utilisation.
+
+Respecte notamment :
+
+- Une structure HTML sémantique.
+- Des contrastes lisibles.
+- Des états de focus visibles.
+- Des libellés explicites pour les formulaires.
+- Des textes alternatifs pertinents.
+- Une navigation au clavier.
+- Des messages d'erreur compréhensibles.
+- Des confirmations d'action accessibles.
+- La réduction des animations pour les utilisateurs qui la demandent.
+
+Le luxe ne doit jamais devenir un obstacle à l'utilisation.
+
+---
+
+12. PERFORMANCE ET SEO
+
+Optimise :
+
+- Les formats d'image.
+- Les tailles de fichiers.
+- Le chargement différé des images hors écran.
+- Les images principales visibles immédiatement.
+- Le chargement des polices.
+- Le JavaScript.
+- Les transitions.
+- Les métadonnées de chaque page.
+- Les titres et descriptions.
+- Les URL et la navigation.
+- Les balises Open Graph.
+- Les données structurées appropriées lorsque les informations sont fiables.
+
+Utilise des formats tels que WebP ou AVIF lorsqu'ils sont compatibles avec les besoins du projet.
+
+Évite les vidéos de fond lourdes lorsqu'une photographie animée avec subtilité offre un meilleur résultat.
+
+Vise une exc

@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MC Studio CRM — Tableau de bord & Demandes</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0c0f0c">
+<link rel="icon" href="public/brand/mc-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/crm.css">
+</head>
+<body>
+
+<main class="admin-shell">
+  <!-- Navigation latérale -->
+  <aside class="admin-nav">
+    <div class="admin-logo">
+      <b>MC</b>
+      <span>CONTROL ROOM · CRM</span>
+    </div>
+    <nav>
+      <button class="nav-btn active" data-tab="dashboard"><i>▦</i><span>Vue d’ensemble</span></button>
+      <button class="nav-btn" data-tab="leads"><i>✉</i><span>Demandes clients</span><em class="crm-dot" id="dot-count">2</em></button>
+      <button class="nav-btn" data-tab="team"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="vertical-align:middle"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></i><span>Équipe</span></button>
+      <button class="nav-btn" data-tab="content"><i>✎</i><span>Contenu du site</span></button>
+      <button class="nav-btn" data-tab="offers"><i>✦</i><span>Offres & Tarifs</span></button>
+    </nav>
+    <a href="index.html">← Voir le site public ↗</a>
+  </aside>
+
+  <!-- Contenu principal -->
+  <section class="admin-main">
+    <header>
+      <div>
+        <span>MC STUDIO / CRM & LEAD MANAGEMENT</span>
+        <h1 id="tab-title">TABLEAU DE BORD</h1>
+      </div>
+      <div class="admin-user">
+        <i>●</i>
+        <span>Miguel & Lionnel<small>Fondateurs · MC Studio</small></span>
+      </div>
+    </header>
+
+    <div id="notice-box" class="admin-notice" style="display:none;"></div>
+
+    <!-- 1. Vue d'ensemble -->
+    <div id="panel-dashboard" class="tab-panel">
+      <div class="dashboard-grid">
+        <article class="metric" onclick="switchTab('leads')" style="cursor:pointer">
+          <span>NOUVELLES DEMANDES</span>
+          <b id="metric-new">2</b>
+          <small>demandes en attente de réponse</small>
+        </article>
+        <article class="metric">
+          <span>CO-FONDATEURS ACTIFS</span>
+          <b>2</b>
+          <small>Lionnel & Miguel connectés</small>
+        </article>
+        <article class="metric">
+          <span>CANAL DE SECOURS</span>
+          <b style="font-size:36px;color:#25D366">WhatsApp</b>
+          <small>Réception instantanée au +237 679 27 87 76</small>
+        </article>
+        <article class="quick">
+          <h2>ACTIONS RAPIDES</h2>
+          <button onclick="switchTab('leads')">✉ Traiter les demandes en cours</button>
+          <button onclick="switchTab('team')"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="vertical-align:-2px;margin-right:6px"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Gérer l'équipe MC Studio</button>
+          <button onclick="switchTab('content')">✎ Mettre à jour les coordonnées</button>
+          <button onclick="window.open('https://wa.me/237679278776', '_blank')"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="vertical-align:-2px;margin-right:6px"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Ouvrir WhatsApp Business ↗</button>
+        </article>
+        <article class="quick">
+          <h2>INFRASTRUCTURE CLOUD</h2>
+          <p class="crm-muted">Hébergement mondial ultra-rapide et sécurisé :</p>
+          <p class="crm-ok">✓ Déploiement actif sur Cloudflare Pages</p>
+          <p class="crm-ok">✓ Routage propre & certificats SSL Edge</p>
+          <p class="crm-ok">✓ CDN mondial à faible latence</p>
+        </article>
+        <article class="metric">
+          <span>SERVICES EN LIGNE</span>
+          <b>6</b>
+          <small>Branding, Web, Motion, Social, Campagnes...</small>
+        </article>
+      </div>
+    </div>
+
+    <!-- 2. Demandes clients (Leads) -->
+    <div id="panel-leads" class="tab-panel" style="display:none;">
+      <div class="crm-toolbar">
+        <input type="search" id="lead-search" placeholder="Rechercher par nom, téléphone, projet ou ville..." oninput="renderLeads()">
+        <div class="crm-filters">
+          <button class="filter-btn active" data-filter="tous" onclick="setLeadFilter('tous', this)">Tous</button>
+          <button class="filter-btn" data-filter="nouveau" onclick="setLeadFilter('nouveau', this)">Nouveaux</button>
+          <button class="filter-btn" data-filter="en cours" onclick="setLeadFilter('en cours', this)">En cours</button>
+          <button class="filter-btn" data-filter="devis envoyé" onclick="setLeadFilter('devis envoyé', this)">Devis envoyé</button>
+          <button class="filter-btn" data-filter="gagné" onclick="setLeadFilter('gagné', this)">Gagné</button>
+          <button class="filter-btn" data-filter="perdu" onclick="setLeadFilter('perdu', this)">Perdu</button>
+        </div>
+      </div>
+
+      <div id="leads-container"></div>
+    </div>
+
+    <!-- 3. Équipe -->
+    <div id="panel-team" class="tab-panel" style="display:none;">
+      <div class="form-head">
+        <div>
+          <span>ACCÈS & RÔLES</span>
+          <h2>Équipe MC Studio</h2>
+        </div>
+      </div>
+      <p class="crm-muted">Les co-fondateurs et collaborateurs accèdent au CRM pour assurer le suivi commercial et opérationnel des projets.</p>
+
+      <div id="team-list">
+        <article class="crm-member">
+          <span class="crm-avatar">L</span>
+          <div><b>Lionnel</b><small>lionnel@mcstudio.cm</small></div>
+          <span class="crm-role owner">Co-fondateur & Tech Lead</span>
+        </article>
+        <article class="crm-member">
+          <span class="crm-avatar">M</span>
+          <div><b>Miguel Corneil</b><small>miguelcorneil441@gmail.com</small></div>
+          <span class="crm-role owner">Co-fondateur & Propriétaire</span>
+        </article>
+      </div>
+
+      <form class="crm-invite" onsubmit="addTeamMember(event)">
+        <label>Nom du collaborateur<input type="text" id="invite-name" required placeholder="Ex. Paul Kouam"></label>
+        <label>Adresse e-mail<input type="email" id="invite-email" required placeholder="collaborateur@mcstudio.cm"></label>
+        <button type="submit">＋ Ajouter à l’équipe</button>
+      </form>
+    </div>
+
+    <!-- 4. Contenu du site -->
+    <div id="panel-content" class="tab-panel" style="display:none;">
+      <form class="admin-form" onsubmit="saveContent(event)">
+        <div class="form-head">
+          <div>
+            <span>ÉDITION EN DIRECT</span>
+            <h2>Coordonnées & Textes clés</h2>
+          </div>
+          <button type="submit">ENREGISTRER</button>
+        </div>
+        <div class="form-row">
+          <label>Téléphone principal<input type="text" id="cfg-phone" value="+237 656 95 97 08"></label>
+          <label>Téléphone secondaire<input type="text" id="cfg-phone2" value="+237 690 73 18 39"></label>
+        </div>
+        <div class="form-row">
+          <label>WhatsApp direct (indicatif sans +)<input type="text" id="cfg-whatsapp" value="237679278776"></label>
+          <label>E-mail studio<input type="email" id="cfg-email" value="miguelcorneil441@gmail.com"></label>
+        </div>
+        <div class="form-row">
+          <label>Localisation<input type="text" id="cfg-loc" value="Douala, Cameroun"></label>
+          <label>Horaires<input type="text" id="cfg-hours" value="Lun - Ven : 08h30 - 18h30"></label>
+        </div>
+      </form>
+    </div>
+
+    <!-- 5. Offres & Tarifs -->
+    <div id="panel-offers" class="tab-panel" style="display:none;">
+      <div class="form-head">
+        <div><span>CATALOGUE & TARIFS</span><h2>Offres du Studio</h2></div>
+      </div>
+      <div class="dashboard-grid" style="grid-template-columns:repeat(auto-fill, minmax(280px, 1fr))">
+        <article class="metric" style="padding:20px">
+          <span>PACK BRANDING EXPRESS</span>
+          <b style="font-size:32px">290 000</b>
+          <small>FCFA · Identité, charte & supports</small>
+        </article>
+        <article class="metric" style="padding:20px">
+          <span>PACK SITE VITRINE PRO</span>
+          <b style="font-size:32px">390 000</b>
+          <small>FCFA · Site responsive, SEO & PWA</small>
+        </article>
+        <article class="metric" style="padding:20px">
+          <span>PACK BOUTIQUE E-COMMERCE</span>
+          <b style="font-size:32px">750 000</b>
+          <small>FCFA · Mobile Money, catalogue & dashboard</small>
+        </article>
+        <article class="metric" style="padding:20px">
+          <span>PACK MOTION & VIDÉO</span>
+          <b style="font-size:32px">520 000</b>
+          <small>FCFA · Animations 2D/3D & spot publicitaire</small>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+// État des demandes (initialisées avec des exemples puis synchronisées en local)
+const DEFAULT_LEADS = [
+  {
+    id: 1,
+    name: "Amina Ndongo",
+    company: "Kira Cosmetics",
+    contact: "+237690112233",
+    subject: "Refonte identité visuelle & Boutique en ligne",
+    budget: "750 000 - 1 500 000 FCFA",
+    delay: "3 semaines",
+    city: "Douala",
+    message: "Bonjour Lionnel et Miguel, nous lançons notre nouvelle gamme de cosmétiques naturels et souhaitons un branding premium avec une boutique Mobile Money.",
+    status: "nouveau",
+    date: "Il y a 2 heures",
+    note: "À rappeler demain matin pour caler le cadrage."
+  },
+  {
+    id: 2,
+    name: "Samuel Ewane",
+    company: "Logistics Hub Central",
+    contact: "+237677445566",
+    subject: "Application mobile de suivi de colis",
+    budget: "1 200 000 FCFA",
+    delay: "1 mois",
+    city: "Yaoundé",
+    message: "Besoin d'une application Android Studio / Flutter pour nos livreurs et un tableau de bord web.",
+    status: "en cours",
+    date: "Hier",
+    note: "Cahier des charges envoyé par email."
+  }
+];
+
+let leads = JSON.parse(localStorage.getItem('mc_crm_leads') || 'null') || DEFAULT_LEADS;
+let currentFilter = 'tous';
+
+function saveLeads() {
+  localStorage.setItem('mc_crm_leads', JSON.stringify(leads));
+  updateCounts();
+}
+
+function updateCounts() {
+  const newCount = leads.filter(l => l.status === 'nouveau').length;
+  document.getElementById('dot-count').textContent = newCount;
+  document.getElementById('metric-new').textContent = newCount;
+}
+
+function setLeadFilter(filter, btn) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderLeads();
+}
+
+function renderLeads() {
+  const q = (document.getElementById('lead-search').value || '').toLowerCase();
+  const container = document.getElementById('leads-container');
+  
+  const filtered = leads.filter(l => {
+    const matchesFilter = currentFilter === 'tous' || l.status === currentFilter;
+    const matchesQuery = !q || [l.name, l.company, l.contact, l.subject, l.message, l.city].join(' ').toLowerCase().includes(q);
+    return matchesFilter && matchesQuery;
+  });
+
+  if (filtered.length === 0) {
+    container.innerHTML = '<p class="crm-muted" style="padding:20px">Aucune demande trouvée pour ce filtre.</p>';
+    return;
+  }
+
+  container.innerHTML = filtered.map(l => {
+    const rawDigits = l.contact.replace(/\\D/g, '');
+    const phoneLink = rawDigits.length >= 8 ? 'tel:+' + (rawDigits.length === 9 ? '237' + rawDigits : rawDigits) : '#';
+    const waLink = rawDigits.length >= 8 ? 'https://wa.me/' + (rawDigits.length === 9 ? '237' + rawDigits : rawDigits) : '#';
+
+    return `
+      <article class="crm-lead ${l.status === 'nouveau' ? 'is-new' : ''}">
+        <div class="crm-lead__top">
+          <span class="crm-kind">✉ Demande Projet</span>
+          <small>${l.date} · ${l.city || 'Cameroun'}</small>
+        </div>
+        <h3>${l.name} ${l.company ? '<em>— ' + l.company + '</em>' : ''}</h3>
+        <div class="crm-meta">
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> ${l.contact}</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="vertical-align:-2px"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> ${l.subject}</span>
+          ${l.budget ? '<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="vertical-align:-2px"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> ' + l.budget + '</span>' : ''}
+          ${l.delay ? '<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="vertical-align:-2px"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ' + l.delay + '</span>' : ''}
+        </div>
+        <p class="crm-msg">${l.message}</p>
+        <div class="crm-actions">
+          <a class="crm-btn" href="${phoneLink}"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="vertical-align:-2px;margin-right:4px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Appeler</a>
+          <a class="crm-btn crm-btn--wa" href="${waLink}" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="vertical-align:-2px;margin-right:4px"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>WhatsApp direct</a>
+        </div>
+        <div class="crm-follow">
+          <label>Statut
+            <select onchange="updateLeadStatus(${l.id}, this.value)">
+              <option value="nouveau" ${l.status === 'nouveau' ? 'selected' : ''}>nouveau</option>
+              <option value="en cours" ${l.status === 'en cours' ? 'selected' : ''}>en cours</option>
+              <option value="devis envoyé" ${l.status === 'devis envoyé' ? 'selected' : ''}>devis envoyé</option>
+              <option value="gagné" ${l.status === 'gagné' ? 'selected' : ''}>gagné</option>
+              <option value="perdu" ${l.status === 'perdu' ? 'selected' : ''}>perdu</option>
+            </select>
+          </label>
+          <label>Note interne
+            <input type="text" value="${l.note || ''}" placeholder="Ajouter une note..." onblur="updateLeadNote(${l.id}, this.value)">
+          </label>
+          <button type="button" class="delete" title="Supprimer" onclick="deleteLead(${l.id})">×</button>
+        </div>
+      </article>
+    `;
+  }).join('');
+}
+
+function updateLeadStatus(id, newStatus) {
+  const item = leads.find(l => l.id === id);
+  if (item) {
+    item.status = newStatus;
+    saveLeads();
+    renderLeads();
+    showNotice('Statut mis à jour.');
+  }
+}
+
+function updateLeadNote(id, newNote) {
+  const item = leads.find(l => l.id === id);
+  if (item && item.note !== newNote) {
+    item.note = newNote;
+    saveLeads();
+    showNotice('Note enregistrée.');
+  }
+}
+
+function deleteLead(id) {
+  if (confirm('Supprimer cette demande ?')) {
+    leads = leads.filter(l => l.id !== id);
+    saveLeads();
+    renderLeads();
+    showNotice('Demande supprimée.');
+  }
+}
+
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+
+  const activePanel = document.getElementById('panel-' + tabId);
+  const activeBtn = document.querySelector(`.nav-btn[data-tab="${tabId}"]`);
+  if (activePanel) activePanel.style.display = 'block';
+  if (activeBtn) activeBtn.classList.add('active');
+
+  const titles = {
+    dashboard: 'TABLEAU DE BORD',
+    leads: 'DEMANDES CLIENTS',
+    team: 'ÉQUIPE MC STUDIO',
+    content: 'CONTENU & COORDONNÉES',
+    offers: 'OFFRES & CATALOGUE'
+  };
+  document.getElementById('tab-title').textContent = titles[tabId] || 'CRM';
+
+  if (tabId === 'leads') renderLeads();
+}
+
+document.querySelectorAll('.nav-btn').forEach(btn => {
+  btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+});
+
+function showNotice(msg) {
+  const box = document.getElementById('notice-box');
+  box.textContent = msg;
+  box.style.display = 'block';
+  setTimeout(() => { box.style.display = 'none'; }, 3000);
+}
+
+function saveContent(e) {
+  e.preventDefault();
+  showNotice('Coordonnées enregistrées avec succès !');
+}
+
+function addTeamMember(e) {
+  e.preventDefault();
+  const name = document.getElementById('invite-name').value;
+  const email = document.getElementById('invite-email').value;
+  const list = document.getElementById('team-list');
+
+  const art = document.createElement('article');
+  art.className = 'crm-member';
+  art.innerHTML = `
+    <span class="crm-avatar">${name[0].toUpperCase()}</span>
+    <div><b>${name}</b><small>${email}</small></div>
+    <span class="crm-role">Collaborateur</span>
+  `;
+  list.appendChild(art);
+  document.getElementById('invite-name').value = '';
+  document.getElementById('invite-email').value = '';
+  showNotice(`Accès accordé à ${name} !`);
+}
+
+// Initialisation
+updateCounts();
+renderLeads();
+</script>
+
+</body>
+</html>

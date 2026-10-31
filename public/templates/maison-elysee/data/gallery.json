@@ -1,0 +1,52 @@
+[
+  {
+    "image": "architecture.webp",
+    "category": "Architecture",
+    "caption": "La maison à l’heure bleue"
+  },
+  {
+    "image": "suite.webp",
+    "category": "Suites",
+    "caption": "Le matin dans les draps de lin"
+  },
+  {
+    "image": "bathroom.webp",
+    "category": "Suites",
+    "caption": "Pierre, eau, lumière"
+  },
+  {
+    "image": "restaurant.webp",
+    "category": "Gastronomie",
+    "caption": "L’heure des conversations"
+  },
+  {
+    "image": "cuisine.webp",
+    "category": "Gastronomie",
+    "caption": "La saison dans l’assiette"
+  },
+  {
+    "image": "spa.webp",
+    "category": "Bien-être",
+    "caption": "Le silence du soin"
+  },
+  {
+    "image": "pool.webp",
+    "category": "Extérieurs",
+    "caption": "L’eau immobile"
+  },
+  {
+    "image": "garden.webp",
+    "category": "Extérieurs",
+    "caption": "Les chemins du jardin"
+  },
+  {
+    "image": "hospitality.webp",
+    "category": "Hospitalité",
+    "caption": "Le geste d’accueil"
+  },
+  {
+    "image": "art.webp",
+    "category": "Architecture",
+    "caption": "L’ombre et la matière"
+  }
+]

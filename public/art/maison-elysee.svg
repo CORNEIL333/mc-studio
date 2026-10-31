@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="elysee-bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#18233a"/>
+      <stop offset="60%" stop-color="#0e1524"/>
+      <stop offset="100%" stop-color="#060910"/>
+    </radialGradient>
+    <linearGradient id="champagne" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf6e2"/>
+      <stop offset="50%" stop-color="#e2c785"/>
+      <stop offset="100%" stop-color="#b89345"/>
+    </linearGradient>
+    <pattern id="arch-pattern" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M10 80V40C10 23.4 23.4 10 40 10C56.6 10 70 23.4 70 40V80" fill="none" stroke="#e2c785" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#elysee-bg)"/>
+  <rect width="1200" height="900" fill="url(#arch-pattern)"/>
+  <rect x="520" y="240" width="460" height="420" rx="230" fill="#e2c785" fill-opacity=".04" stroke="url(#champagne)" stroke-width="1.5" stroke-opacity=".3"/>
+  <rect x="560" y="280" width="380" height="380" rx="190" fill="none" stroke="url(#champagne)" stroke-width="1" stroke-opacity=".15" stroke-dasharray="4 6"/>
+  <g opacity=".85">
+    <path d="M60 100H1140M60 800H1140" stroke="#e2c785" stroke-width="1.5" stroke-opacity=".3"/>
+  </g>
+  <text x="65" y="75" fill="#fdf6e2" font-family="'Instrument Serif',Georgia,serif" font-size="20" letter-spacing="6">TEMPLATE WEB · 08 PAGES · PALACE</text>
+  <text x="1140" y="75" fill="url(#champagne)" font-family="Arial,sans-serif" font-weight="bold" text-anchor="end" font-size="20">MC STUDIO ®</text>
+  <text x="67" y="460" fill="url(#champagne)" font-family="'Instrument Serif',Georgia,serif" font-weight="900" letter-spacing="-2" font-size="115">MAISON ÉLYSÉE</text>
+  <text x="67" y="575" fill="#ffffff" font-family="Arial,sans-serif" font-weight="bold" letter-spacing="4" font-size="44">HÔTEL 5 ÉTOILES &amp; SPA</text>
+  <text x="69" y="640" fill="#e2c785" font-size="20" font-family="Arial,sans-serif" letter-spacing="6">SUITES · GASTRONOMIE ÉTOILÉE · RÉSERVATION</text>
+  <rect x="67" y="700" width="310" height="48" rx="24" fill="#e2c785" fill-opacity=".18" stroke="url(#champagne)" stroke-width="1.5"/>
+  <text x="222" y="731" fill="#fdf6e2" font-family="Arial,sans-serif" font-size="16" font-weight="bold" text-anchor="middle" letter-spacing="2">DÉMO HÔTELIÈRE (8P) ↗</text>
+  <circle cx="1130" cy="840" r="30" stroke="url(#champagne)" stroke-width="2" fill="none"/>
+  <path d="M1117 852l27-27M1127 826h17v17" stroke="url(#champagne)" stroke-width="3" fill="none"/>
+</svg>

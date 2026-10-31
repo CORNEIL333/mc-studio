@@ -1,0 +1,116 @@
+/* MC Studio — en-têtes refaits : Services (orbite), Produits (vitrine 3D), Studio (badge d'accès) */
+
+/* ---------- Services : orbite d'expertises ---------- */
+.h-orbit{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;padding:140px var(--gutter) 80px;overflow:hidden;isolation:isolate}
+.h-orbit::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(rgba(91,140,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(91,140,255,.08) 1px,transparent 1px);background-size:72px 72px;
+  -webkit-mask:radial-gradient(ellipse at center,#000 30%,transparent 75%);mask:radial-gradient(ellipse at center,#000 30%,transparent 75%)}
+.h-orbit__core{position:relative;z-index:3;max-width:1000px;text-shadow:0 6px 40px rgba(8,8,11,.9)}
+.h-orbit__core .d-1{font-size:clamp(54px,10vw,170px)}
+.h-orbit__core .d-1 .line:last-child{color:var(--lime)}
+.h-orbit__core .lead{margin:28px auto 0}
+.h-orbit__core .btn-row{justify-content:center;margin-top:30px}
+.ring{position:absolute;left:50%;top:50%;border:1px dashed rgba(91,140,255,.35);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:1}
+.ring--1{width:min(1180px,150vw);height:min(640px,90vw)}
+.ring--2{width:min(880px,115vw);height:min(470px,70vw);border-color:rgba(214,255,56,.18)}
+.orbiter{position:absolute;left:50%;top:50%;z-index:2;offset-path:var(--path);offset-rotate:0deg;animation:orbit var(--t,40s) linear infinite;animation-delay:var(--d,0s)}
+.orbiter a{display:inline-flex;align-items:center;gap:10px;padding:12px 18px 12px 12px;border-radius:999px;background:rgba(15,17,21,.85);backdrop-filter:blur(10px);border:1px solid rgba(91,140,255,.4);font-family:var(--f-display);font-weight:700;font-size:clamp(14px,1.3vw,18px);white-space:nowrap;transition:background .3s,color .3s;transform:translate(-50%,-50%)}
+.orbiter a:hover{background:var(--lime);color:var(--ink)}
+.orbiter i{font-style:normal;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:rgba(91,140,255,.18);font-size:18px}
+@keyframes orbit{from{offset-distance:0%}to{offset-distance:100%}}
+@supports not (offset-path:ellipse(1px 1px)){.orbiter{display:none}}
+@media (max-width:760px){.orbiter a{font-size:12px;padding:8px 12px 8px 8px}.orbiter i{width:26px;height:26px;font-size:14px}}
+
+/* ---------- Produits : vitrine de lancement 3D ---------- */
+.h-show{position:relative;min-height:100svh;display:grid;grid-template-columns:1fr 1fr;gap:var(--gutter);align-items:center;padding:140px var(--gutter) 70px;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 70% 110%,rgba(63,242,196,.18),transparent 60%),var(--ink)}
+.beams{position:absolute;inset:-20% -10% 0;z-index:-1;pointer-events:none;
+  background:conic-gradient(from 200deg at 70% -10%,transparent 0deg,rgba(63,242,196,.16) 8deg,transparent 18deg,transparent 30deg,rgba(255,255,255,.08) 36deg,transparent 46deg,transparent 60deg,rgba(63,242,196,.12) 66deg,transparent 78deg);
+  filter:blur(8px);animation:sweep 9s ease-in-out infinite alternate;transform-origin:70% 0}
+@keyframes sweep{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
+.h-show .d-2 .line:last-child{color:var(--lime)}
+.h-show .lead{margin-top:26px}
+.h-show .btn-row{margin-top:30px}
+.stage3d{position:relative;height:min(560px,64vh);perspective:1100px;display:grid;place-items:center}
+.podium{position:absolute;bottom:4%;left:50%;width:78%;height:90px;transform:translateX(-50%) rotateX(72deg);border-radius:50%;background:radial-gradient(ellipse,rgba(63,242,196,.35),transparent 70%)}
+.box{--s:150px;position:absolute;width:var(--s);height:var(--s);transform-style:preserve-3d;animation:spin3d 14s linear infinite}
+.box a{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:14px;border:1px solid rgba(255,255,255,.18);font-family:var(--f-display);font-weight:800;text-transform:uppercase;line-height:.95;font-size:calc(var(--s) * .13);backface-visibility:hidden}
+.box a small{font-family:var(--f-mono);font-weight:500;font-size:10px;letter-spacing:.06em;opacity:.8}
+.box .f1{transform:translateZ(calc(var(--s) / 2))}
+.box .f2{transform:rotateY(90deg) translateZ(calc(var(--s) / 2))}
+.box .f3{transform:rotateY(180deg) translateZ(calc(var(--s) / 2))}
+.box .f4{transform:rotateY(-90deg) translateZ(calc(var(--s) / 2))}
+.box .f5{transform:rotateX(90deg) translateZ(calc(var(--s) / 2))}
+.box .f6{transform:rotateX(-90deg) translateZ(calc(var(--s) / 2))}
+.box--a{--s:190px;left:30%;top:30%;margin:-95px 0 0 -95px}
+.box--a a{background:linear-gradient(150deg,#3ff2c4,#1aa585);color:var(--ink)}
+.box--b{--s:140px;left:72%;top:22%;margin:-70px 0 0 -70px;animation-duration:18s;animation-direction:reverse}
+.box--b a{background:linear-gradient(150deg,#d6ff38,#9bc71a);color:var(--ink)}
+.box--c{--s:120px;left:64%;top:66%;margin:-60px 0 0 -60px;animation-duration:11s}
+.box--c a{background:linear-gradient(150deg,#1b1f27,#0b0d11);color:var(--paper)}
+@keyframes spin3d{from{transform:rotateX(-18deg) rotateY(0)}to{transform:rotateX(-18deg) rotateY(360deg)}}
+.floaty{animation:float 6s ease-in-out infinite}
+@keyframes float{50%{translate:0 -14px}}
+.price-chip{position:absolute;z-index:3;padding:10px 14px;border-radius:12px;background:var(--paper);color:var(--ink);font-family:var(--f-mono);font-size:12px;box-shadow:0 14px 30px -12px rgba(0,0,0,.6)}
+.price-chip b{font-family:var(--f-display);font-size:18px;display:block}
+@media (max-width:960px){.h-show{grid-template-columns:1fr}.stage3d{height:440px}.box--a{--s:150px;margin:-75px 0 0 -75px}}
+
+/* ---------- Studio : badge d'accès ---------- */
+.h-pass{position:relative;min-height:100svh;display:grid;grid-template-columns:1.15fr .85fr;gap:var(--gutter);align-items:center;padding:140px var(--gutter) 70px;overflow:hidden;isolation:isolate}
+.h-pass .d-1{font-size:clamp(54px,9vw,150px)}
+.typer{color:var(--lime);font-family:var(--f-serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:-.02em;display:inline-block;min-width:4ch}
+.typer::after{content:"";display:inline-block;width:.06em;height:.8em;margin-left:.06em;background:var(--lime);vertical-align:-.05em;animation:caret 1s steps(1) infinite}
+@keyframes caret{50%{opacity:0}}
+.h-pass .lead{margin-top:28px}
+.h-pass .btn-row{margin-top:30px}
+.lanyard{position:relative;height:min(640px,78vh);display:flex;justify-content:center}
+.strap{position:absolute;top:-140px;width:44px;height:290px;background:repeating-linear-gradient(180deg,#ffb23f 0 22px,#16120a 22px 44px);clip-path:polygon(0 0,100% 0,72% 100%,28% 100%)}
+.pass{position:absolute;top:130px;width:min(330px,80vw);border-radius:22px;background:var(--paper);color:var(--ink);padding:18px;box-shadow:0 40px 70px -24px rgba(0,0,0,.85);transform-origin:50% -150px;animation:sway 5s ease-in-out infinite}
+.pass::before{content:"";position:absolute;top:-18px;left:50%;width:46px;height:30px;border-radius:8px;border:6px solid #c9c5b8;border-bottom:0;transform:translateX(-50%)}
+.pass__head{display:flex;justify-content:space-between;align-items:center}
+.pass__head img{height:34px}
+.pass__photo{margin:14px 0;aspect-ratio:4/4.4;border-radius:14px;overflow:hidden;background:var(--ink-3)}
+.pass__photo img{width:100%;height:100%;object-fit:cover}
+.pass b{font-family:var(--f-display);font-weight:800;font-size:28px;line-height:1;text-transform:uppercase;font-variation-settings:"wdth" 80}
+.pass__role{display:inline-block;margin-top:8px;padding:5px 10px;border-radius:999px;background:#ffb23f;font-family:var(--f-mono);font-size:11px;text-transform:uppercase}
+.pass__foot{display:flex;justify-content:space-between;align-items:flex-end;margin-top:14px;border-top:1px dashed rgba(0,0,0,.2);padding-top:12px}
+.pass__bar{width:110px;height:34px;background:repeating-linear-gradient(90deg,#000 0 2px,transparent 2px 4px,#000 4px 5px,transparent 5px 8px,#000 8px 11px,transparent 11px 13px)}
+@keyframes sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+.sticker-s{position:absolute;z-index:3;padding:10px 14px;border-radius:12px;font-family:var(--f-display);font-weight:800;box-shadow:0 12px 26px -10px rgba(0,0,0,.6);animation:bob 5s ease-in-out infinite}
+@media (max-width:960px){.h-pass{grid-template-columns:1fr}.lanyard{height:560px}}
+@media (prefers-reduced-motion:reduce){.orbiter,.box,.pass,.beams,.floaty,.sticker-s{animation:none}}
+
+/* =========================================================
+   Fond « traînées de lumière » : noir profond, rubans flous qui glissent lentement
+   (remplace la grille/aurore de Services et les faisceaux de Produits)
+   ========================================================= */
+.leak{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:#08080b}
+.leak i{position:absolute;left:-25%;width:150%;border-radius:50%;filter:blur(80px);mix-blend-mode:screen;will-change:transform}
+.leak i:nth-child(1){top:-10%;height:42%;opacity:.6;background:linear-gradient(90deg,transparent 5%,#2f22c9 28%,#7a5cff 48%,#c2508f 72%,transparent 95%);animation:leakA 20s ease-in-out infinite alternate}
+.leak i:nth-child(2){top:44%;height:24%;opacity:.32;background:linear-gradient(90deg,transparent 10%,#4f7dff 32%,#a46bff 56%,#ff7f5c 82%,transparent);animation:leakB 26s ease-in-out infinite alternate}
+.leak i:nth-child(3){bottom:-22%;height:34%;opacity:.42;background:linear-gradient(90deg,transparent 12%,#241a6e 40%,#62296d 70%,transparent 92%);animation:leakA 30s ease-in-out infinite alternate-reverse}
+.leak::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 50% 45%,transparent 35%,rgba(8,8,11,.92) 100%)}
+.leak--teal i:nth-child(1){background:linear-gradient(90deg,transparent 5%,#0f8f7a 26%,#22d3b0 44%,#3b6cff 70%,transparent 95%)}
+.leak--teal i:nth-child(2){background:linear-gradient(90deg,transparent 10%,#2bd9b9 30%,#5a5cff 60%,#a46bff 85%,transparent)}
+.leak--teal i:nth-child(3){background:linear-gradient(90deg,transparent 12%,#0d4a5c 40%,#2a2a8a 72%,transparent 92%)}
+@keyframes leakA{to{transform:translateX(14%) rotate(5deg)}}
+@keyframes leakB{to{transform:translateX(-16%) rotate(-4deg)}}
+@media (prefers-reduced-motion:reduce){.leak i{animation:none}}
+
+/* Services : plus de grille ni d'anneaux pointillés */
+.h-orbit::after{display:none}
+.h-orbit .ring{border-style:solid;border-color:rgba(255,255,255,.05)}
+.h-orbit .ring--2{border-color:rgba(255,255,255,.035)}
+.orbiter a{background:rgba(14,14,20,.7);border-color:rgba(255,255,255,.12)}
+.orbiter i{background:rgba(255,255,255,.06)}
+/* Produits : fond neutre, la lumière vient des rubans */
+.h-show{background:none}
+.h-show .beams,.h-show .podium{display:none}
+.svc-leak{position:relative;isolation:isolate}
+
+body[data-page="services"] .svc::before{display:none}
+
+/* Scènes 3D plein cadre (Services : houle de particules, Produits : chrome liquide) */
+.scene-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-2;display:block}
+.scene-vignette{position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 42%,rgba(8,8,11,.78) 0%,rgba(8,8,11,.25) 45%,transparent 70%),linear-gradient(180deg,#08080b 0%,transparent 22%,transparent 78%,#08080b 100%)}
+.scene-vignette--left{background:linear-gradient(90deg,rgba(8,8,11,.92) 0%,rgba(8,8,11,.6) 38%,transparent 62%),linear-gradient(180deg,#08080b 0%,transparent 20%,transparent 80%,#08080b 100%)}
+.h-orbit,.h-show{background:#08080b}

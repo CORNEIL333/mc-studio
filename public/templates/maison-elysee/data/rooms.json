@@ -1,0 +1,46 @@
+[
+  {
+    "id": "superieure",
+    "name": "Chambre Supérieure",
+    "area": 38,
+    "capacity": 2,
+    "rate": 280,
+    "stock": 4,
+    "image": "suite",
+    "view": "Jardin",
+    "description": "Un refuge de lin et de chêne, ouvert sur les herbes hautes."
+  },
+  {
+    "id": "deluxe",
+    "name": "Chambre Deluxe",
+    "area": 52,
+    "capacity": 3,
+    "rate": 390,
+    "stock": 3,
+    "image": "bathroom",
+    "view": "Cour intérieure",
+    "description": "La pierre claire, une baignoire sculptée et le luxe de prendre son temps."
+  },
+  {
+    "id": "executive",
+    "name": "Suite Exécutive",
+    "area": 78,
+    "capacity": 4,
+    "rate": 590,
+    "stock": 2,
+    "image": "suite",
+    "view": "Forêt",
+    "description": "Un salon indépendant et une terrasse pour prolonger les conversations."
+  },
+  {
+    "id": "signature",
+    "name": "Suite Signature",
+    "area": 120,
+    "capacity": 5,
+    "rate": 920,
+    "stock": 1,
+    "image": "pool",
+    "view": "Bassin privé",
+    "description": "Une maison dans la maison. Patio, bassin et service personnalisé."
+  }
+]

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="yalo-bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#3d0522"/>
+      <stop offset="60%" stop-color="#1f0212"/>
+      <stop offset="100%" stop-color="#0d0107"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5e1a4"/>
+      <stop offset="50%" stop-color="#dfb76c"/>
+      <stop offset="100%" stop-color="#9a7428"/>
+    </linearGradient>
+    <pattern id="yalo-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#dfb76c" fill-opacity=".15"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#yalo-bg)"/>
+  <rect width="1200" height="900" fill="url(#yalo-grid)"/>
+  <circle cx="600" cy="450" r="320" stroke="url(#gold)" stroke-width="2" stroke-opacity=".25" fill="none"/>
+  <circle cx="600" cy="450" r="380" stroke="url(#gold)" stroke-width="1" stroke-opacity=".15" stroke-dasharray="8 8" fill="none"/>
+  <circle cx="600" cy="450" r="220" stroke="url(#gold)" stroke-width="1.5" stroke-opacity=".3" fill="none"/>
+  <g transform="translate(600,450) rotate(45)">
+    <rect x="-140" y="-140" width="280" height="280" rx="36" fill="#dfb76c" fill-opacity=".06" stroke="url(#gold)" stroke-width="2"/>
+  </g>
+  <g opacity=".85">
+    <path d="M60 100H1140M60 800H1140" stroke="#dfb76c" stroke-width="1.5" stroke-opacity=".35"/>
+  </g>
+  <text x="65" y="75" fill="#f5e1a4" font-family="'Cinzel',serif,sans-serif" font-size="20" letter-spacing="6">RÉALISATION LIVE · APPLICATION WEB</text>
+  <text x="1140" y="75" fill="url(#gold)" font-family="Arial,sans-serif" font-weight="bold" text-anchor="end" font-size="20">MC STUDIO ®</text>
+  <text x="67" y="470" fill="url(#gold)" font-family="'Cinzel',serif,Arial Black,sans-serif" font-weight="900" letter-spacing="-3" font-size="110">YALO GLAM'S</text>
+  <text x="67" y="585" fill="#ffffff" font-family="Arial,sans-serif" font-weight="bold" letter-spacing="4" font-size="46">HAUTE COIFFURE &amp; SPA</text>
+  <text x="69" y="650" fill="#dfb76c" font-size="20" font-family="Arial,sans-serif" letter-spacing="6">RÉSERVATION VIP · PWA · COCKPIT GÉRANT</text>
+  <rect x="67" y="710" width="320" height="48" rx="24" fill="#dfb76c" fill-opacity=".2" stroke="url(#gold)" stroke-width="1.5"/>
+  <text x="227" y="741" fill="#f5e1a4" font-family="Arial,sans-serif" font-size="16" font-weight="bold" text-anchor="middle" letter-spacing="2">EN PRODUCTION LIVE ↗</text>
+  <circle cx="1130" cy="840" r="30" stroke="url(#gold)" stroke-width="2" fill="none"/>
+  <path d="M1117 852l27-27M1127 826h17v17" stroke="url(#gold)" stroke-width="3" fill="none"/>
+</svg>

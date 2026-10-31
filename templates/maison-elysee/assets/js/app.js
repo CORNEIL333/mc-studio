@@ -1,0 +1,9 @@
+import {initNavigation} from './navigation.js';
+import {initGallery} from './gallery.js';
+import {initBooking} from './booking.js';
+import {today} from './validation.js';
+initNavigation();initGallery();initBooking();
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window){document.documentElement.classList.add('js-motion');const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.remove('waiting');observer.unobserve(e.target);}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>{el.classList.add('waiting');observer.observe(el);});}
+document.querySelectorAll('img').forEach(im=>im.addEventListener('error',()=>{if(im.dataset.fallback)return;im.dataset.fallback='true';im.src=new URL('../fallback.svg',import.meta.url).href;im.alt+=' — illustration de remplacement';}));
+document.querySelectorAll('.request-form').forEach(form=>{form.elements.date.min=today();form.addEventListener('submit',e=>{e.preventDefault();const status=form.querySelector('.status');if(form.elements.date.value<today()){status.textContent='Choisissez une date à partir d’aujourd’hui.';return;}status.textContent='Votre demande de démonstration a été préparée. Aucun message n’a été envoyé ni enregistré.';form.reset();});});
+const quick=document.querySelector('.search form');if(quick){quick.elements.arrival.min=today();quick.elements.departure.min=today();quick.addEventListener('submit',e=>{if(quick.elements.departure.value<=quick.elements.arrival.value){e.preventDefault();quick.elements.departure.setCustomValidity('Le départ doit être après l’arrivée.');quick.elements.departure.reportValidity();}});quick.elements.departure.addEventListener('input',()=>quick.elements.departure.setCustomValidity(''));quick.elements.arrival.addEventListener('input',()=>quick.elements.departure.setCustomValidity(''));}

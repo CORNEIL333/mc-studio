@@ -1,0 +1,26 @@
+[
+  {
+    "id": "malik",
+    "name": "MALIK N.",
+    "role": "Force & technique",
+    "image": "portrait",
+    "qualification": "Certification force — fictive",
+    "bio": "Une répétition maîtrisée vaut mieux que dix répétitions précipitées."
+  },
+  {
+    "id": "aya",
+    "name": "AYA M.",
+    "role": "Functional & mobilité",
+    "image": "coaching",
+    "qualification": "Diplôme préparation physique — fictif",
+    "bio": "Bouger avec confiance, construire des habitudes, progresser ensemble."
+  },
+  {
+    "id": "sarah",
+    "name": "SARAH K.",
+    "role": "Endurance & HIIT",
+    "image": "endurance",
+    "qualification": "Certification coaching endurance — fictive",
+    "bio": "Trouver son rythme avant de chercher la vitesse."
+  }
+]

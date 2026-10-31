@@ -1,0 +1,40 @@
+[
+  {
+    "id": "essential",
+    "name": "ESSENTIAL",
+    "price": 15000,
+    "tag": "La base. Sans compromis.",
+    "features": [
+      "Musculation & cardio",
+      "Accès 6 j / 7",
+      "Bilan de départ inclus"
+    ],
+    "courses": false
+  },
+  {
+    "id": "district",
+    "name": "DISTRICT",
+    "price": 25000,
+    "tag": "Votre terrain de progression.",
+    "features": [
+      "Tous les espaces",
+      "Cours collectifs inclus",
+      "Accès 7 j / 7",
+      "Suivi mensuel"
+    ],
+    "courses": true
+  },
+  {
+    "id": "elite",
+    "name": "ELITE",
+    "price": 45000,
+    "tag": "Un accompagnement dédié.",
+    "features": [
+      "Tout District inclus",
+      "2 coachings / mois",
+      "Zone récupération",
+      "Suivi individuel"
+    ],
+    "courses": true
+  }
+]
